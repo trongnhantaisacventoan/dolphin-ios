@@ -86,7 +86,7 @@ if(NOT ANDROID AND NOT IOS)
 endif()
 
 
-set(USE_SYSTEM_LIBS "AUTO" CACHE STRING "Use system libraries instead of bundled libraries.  ON - Always use system and fail if unavailable, OFF - Always use bundled, AUTO - Use system if available, otherwise use bundled.  Default is AUTO")
+set(USE_SYSTEM_LIBS "OFF" CACHE STRING "Use system libraries instead of bundled libraries.  ON - Always use system and fail if unavailable, OFF - Always use bundled, AUTO - Use system if available, otherwise use bundled.  Default is AUTO")
 if(APPROVED_VENDORED_DEPENDENCIES)
   message(WARNING "APPROVED_VENDORED_DEPENDENCIES is deprecated.  Please migrate to setting USE_SYSTEM_LIBS to ON and setting USE_SYSTEM_<dependency> to either AUTO or OFF to allow bundled libs.")
 endif()
